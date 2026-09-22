@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+    <FORM NAME=Personal ACTION=ReadParameters.asp METHOD=POST>
+    <FONT FACE="Arial" size="2"><b>Tên tài khoản:</b></font>
+    <INPUT NAME=username SIZE=25>
+    <FONT FACE="Arial" size="2">
+    <b>Mật Khẩu:</b></font>
+    <INPUT TYPE=passwold NAME=password SIZE=25 maxlength="20">
+    <BR><BR>
+    <FONT FACE="Arial" size="2">
+    <b>Giới tính:</b></font><INPUT TYPE=Radio NAME=Sex VALUE=Male>
+    <font size="2" face="Arial">Nam</font>
+    <INPUT TYPE=Radio NAME=Sex VALUE=Female>
+    <FONT FACE="Arial" size="2">Nữ</FONT>
+    <BR><BR>
+    <FONT FACE="Arial" size="2">
+    <b>Học lực:</b></FONT></td>
+    <SELECT NAME=education size="1">
+        <OPTION VALUE="invalid">Chọn mức học lực<br>
+        <OPTION VALUE="HSchool">Trung học<br>
+        <OPTION VALUE="college">Cao đẳng<br>
+        <OPTION VALUE="University">Đại học
+    </SELECT>
+    <BR><BR>
+    <TD VALIGN=TOP><font face="Arial" size="2"><b>Sở thích:</b></font><br></TD>
+    <TD VALIGN=TOP>
+    <INPUT TYPE=Checkbox NAME=Books value="1"><font face="Arial" size="2">Đọc sách</font></br>
+    <INPUT TYPE=Checkbox NAME=Music value="2"><font face="Arial" size="2">Nghe nhạc</font></br>
+    <INPUT TYPE=Checkbox NAME=Movies value="3"><font face="Arial" size="2">Xem phim</font></br>
+    <INPUT TYPE=Checkbox NAME=Cooking value="4"><font face="Arial" size="2">Nấu ăn</font></br>
+    </TD>
+    <BR><BR>
+    <INPUT TYPE=submit name=submit value="Dang ky">
+    <INPUT TYPE=reset value="Huy">
+</body>
+</html>
