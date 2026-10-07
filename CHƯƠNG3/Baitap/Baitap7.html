@@ -1,57 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <title>Menu</title>
+    <meta charset="UTF-8">
+    <title>Baitap7</title>
+<!--
+    1. Các thuộc tính và ý nghĩa của nó
+    -display: (tuỳ chỉnh cách thức hiển thị của Element)
+    -Value: block, inline, jide,...
+    2. Sử dụng kỹ thuật gì để thiết kế yêu cầu của trang này
+    - Dùng auto để
+    -->
+    <style>
+        body {
+            margin: 30px;
+            font-family: Arial;
+        }
+
+        .khung {
+            width: auto;
+            height: auto;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        /* Menu bên trái */
+        .menu {
+            width: 230px;
+            background-color: #222;
+            padding: 15px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 12px;
+        }
+
+        /* Nội dung bên phải */
+        .noidung {
+            flex: 1;
+            background-color: #eee;
+            padding: 15px;
+        }
+
+        .noidung h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-<h2>BÀI TẬP 3.7</h2>
+    <div class="khung">
 
-<table width="300" bgcolor="gray" cellpadding="5">
+        <!-- MENU -->
+        <div class="menu">
 
-<tr>
-    <td>
-        <a href="gioithieu.htm">Giới thiệu</a>
-    </td>
-</tr>
+            <a href="gioithieu.htm">Giới thiệu</a>
 
-<tr>
-    <td>
-        <a href="tintuc.htm">Tin tức</a>
-    </td>
-</tr>
+            <a href="tintuc.htm">Tin tức</a>
 
-<tr>
-    <td>
-        <a href="daotao.htm">Đào tạo</a>
-    </td>
-</tr>
+            <a href="daotao.htm">Đào tạo</a>
 
-<tr>
-    <td>
-        <a href="thoikhoabieu.htm">Thời khóa biểu</a>
-    </td>
-</tr>
+            <a href="thoikhoabieu.htm">Thời khóa biểu</a>
 
-<tr>
-    <td>
-        <a href="lichthi.htm">Lịch thi</a>
-    </td>
-</tr>
+            <a href="lichthi.htm">Lịch thi</a>
 
-<tr>
-    <td>
-        <a href="phongchucnang.htm">Phòng chức năng</a>
-    </td>
-</tr>
+            <a href="phongchucnang.htm">Phòng chức năng</a>
 
-<tr>
-    <td>
-        <a href="cackhoa.htm">Các khoa</a>
-    </td>
-</tr>
+            <a href="cackhoa.htm">Các Khoa</a>
 
-</table>
+        </div>
+
+
+        <!-- NỘI DUNG -->
+        <div class="noidung">
+
+            <h3>Giới thiệu về Trung tâm Công nghệ phần mềm</h3>
+
+            <p>
+                Trung tâm được thành lập ngày 10/02/1999,
+                trụ sở đặt tại Khoa Kỹ thuật và Công nghệ -
+                Trường Đại học Bạc Liêu,...
+            </p>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
