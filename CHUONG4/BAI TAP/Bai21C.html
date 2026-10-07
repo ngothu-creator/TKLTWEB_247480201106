@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Tính toán</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+    Số 01:
+    <input type="text" id="So01">
+    <br><br>
+
+    Số 02:
+    <input type="text" id="So02">
+    <br><br>
+
+    Kết quả:
+    <input type="text" id="Ketqua">
+    <br><br>
+
+    <select name="PhepTinh">
+        <option value="cong">Cộng</option>
+        <option value="tru">Trừ</option>
+        <option value="nhan">Nhân</option>
+        <option value="chia">Chia</option>
+    </select>
+
+    <input type="button" value="Tính"
+       onclick="Tinh();">
+
+    <script language="javascript">
+        function Tinh()
+        {
+            var a = parseFloat(document.getElecmentById("So01").value);
+            var b = parseFloat(document.getElecmentById("So02").value);
+
+            if (isNaN(a) || isNaN(b))
+            {
+                alert("Vui lòng nhập hai số!");
+                return;
+            }
+
+            var phepTinh = document.getElementById("PhepTinh").value;
+
+            var kq;
+
+            if (phepTinh == "cong")
+                kq = a + b;
+
+            else if (phepTinh == "tru")
+                kq = a - b;
+
+            else if (phepTinh == "nhan")
+                kq = a * b;
+
+            else if (phepTinh == "chia")
+            {
+                if (b == 0)
+                {
+                    alert("Không thể chia cho 0!");
+                    return;
+                }
+
+                kq = a / b;
+            }
+            document.getElementById("Ketqua").value = kq;
+        }
+    </script>
+</body>
+</html>

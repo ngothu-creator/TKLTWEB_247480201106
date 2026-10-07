@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Danh sách thiết bị</title>
+</head>
+<body>
+    <script language="Javascript">
+
+        var SoLuong, i;
+        var DS = new Array(100);
+
+        SoLuong = prompt("Bạn cần nhập bao nhiêu thiết bị: ", 5);
+
+        for(i=0; i<SoLuong; i++){
+            DS[i] = prompt("Nhập tên thiết bị: ", "");
+        }
+        document.write("<h2>Danh sách thiết bị văn phòng</h2>");
+
+        document.write("<table border='1 cellpadding='5'>");
+
+        document.write("<tr>");
+        document.write("<th>STT</th>");
+        document.write("<th>Tên thiết bị</th>");
+        document.write("</tr>");
+
+        for(i=0; i<SoLuong; i++)
+        {
+            if(DS[i] == "Computer")
+            {
+                document.write("<tr>");
+                document.write("<td>" + (i + 1) + "</td>");
+                document.write("<th>" + DS[i] + "</th>");
+                document.write("</tr>");
+            }
+        }    
+    document.write("</table>");
+    </script>
+
+</body>
+</html>
