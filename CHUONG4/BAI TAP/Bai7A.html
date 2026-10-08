@@ -1,0 +1,16 @@
+<html>
+    <title>Tinh Tuoi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+    <script language="JavaScript">
+        var D = new Date();
+        var Namsinh, NamHienTai;
+
+        NamHienTai = D.getFullYear();
+        do{
+            Namsinh = prompt("Bạn sinh năm bao nhiêu :", "");
+        }while (parseInt(Namsinh)> NamHienTai);
+        alert("Tuổi của bạ bây giờ là : " + (NamHienTai - Namsinh));
+    </script>
+</body>
+</html>

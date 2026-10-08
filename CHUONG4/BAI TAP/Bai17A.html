@@ -1,16 +1,11 @@
 <html>
-<head></head>
+<head>
+    <title>Đổi màu nền</title>
+</head>
 <body>
-    <script language="JavaScript">
-    function DoiMau()
-    {
-        document.bgColor = Mau.value;
-    }
+    <h2>Chọn màu nền</h2>
 
-    </script>
-    Bạn hãy chọn màu nền:
-
-    <select name=Mau onchange= "DoiMau();">
+    <select name=Mau onchange= "DoiMau(this.value);">
 
         <OPTION value="red">Màu đỏ</OPTION>
 
@@ -21,5 +16,11 @@
         <OPTION value="lavender">Màu xanh nhạt</OPTION>
 
     </select>
+    <script language="JavaScript">
+        function DoiMau(mau)
+        {
+            document.body.style.backgroundColor = mau;
+        }
+        </script>
 </body>
 </html>

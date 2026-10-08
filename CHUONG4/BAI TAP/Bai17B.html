@@ -4,28 +4,31 @@
 </head>
 <body>
 
-    <script language="javascript">
-    function doiMau()
-    {
-        document.bgColor = Mau.value;
-    }
-    </script>
-
-    Bạn hãy chọn màu nền:
-
-    <br><br>
+    <h2>Chọn màu nền:</h2>
 
     <input type="radio" name="Mau" value="yellow"
-    onclick="doiMau();"> Màu vàng
+    onclick="doiMau(this.value);"> Màu vàng
+
+    <br>
 
     <input type="radio" name="Mau" value="green"
-    onclick="doiMau();"> Màu xanh lá
+    onclick="doiMau(this.value);"> Màu xanh lá
+
+    <br>
 
     <input type="radio" name="Mau" value="brown"
-    onclick="doiMau();"> Màu nâu
+    onclick="doiMau(this.value);"> Màu nâu
+
+    <br>
 
     <input type="radio" name="Mau" value="magenta"
-    onclick="doiMau();"> Màu hồng
+    onclick="doiMau(this.value);"> Màu hồng
 
+    <script language="Javascript">
+        function doiMau(mau)
+        {
+            document.body.style.backgroundColor = mau;
+        }
+        </script>
 </body>
 </html>
